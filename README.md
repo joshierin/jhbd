@@ -5,4 +5,4 @@ Love,
 Joshreen
 
 P.S.
-E view mo lang sa laptop ni sa laptop hehe
+E view mo lang sa laptop mo.
