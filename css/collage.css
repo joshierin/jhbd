@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header {
+    background-image: url('/images/No.jpg');
+    height: 100vh;
+    background-size: cover;
+    max-width: 100%;
+    background-position: center;
+    animation: transitionIn 3.5s; 
+    
+}
+
+body{
+    overflow: hidden;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    
+    to {
+        opacity: 1;
+        transform: rotateX(0); 
+    }
+}
+
+.zoom {
+    width: 270px;
+    height: 330px;
+    transition: transform 1.0s;
+  }
+
+  .zoom:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+  }
+
+  .zoom:hover .overlay{
+    opacity: 5;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 1.0s ease;
+  }
+
+.image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 100px 500px 10px;
+  }
+
+  .text {
+    color: black;
+    font-size: 25px;
+    font-family: 'Parisienne', cursive;
+    position: fixed;
+    top: 100%;
+    left: 310%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center
+  }
+

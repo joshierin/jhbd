@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header {
+    background-image: url('/images/—Pngtree—hand\ drawn\ cute\ sky\ moon_939215.jpg');
+    height: 100vh;
+    background-size: cover;
+    max-width: 100%;
+    background-position: center;
+    animation: transitionIn 3.5s; 
+}
+
+body {
+    overflow: hidden;
+}
+
+.title h1 {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,50%);
+    font-family: 'Indie Flower', cursive;
+    font-size: 4.5vw;
+    color: #fff;
+    animation: title 1s ease-in-out infinite alternate;
+}
+
+.par {
+    font-size: 1.1vw;
+}
+
+@keyframes title {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    
+    to {
+        opacity: 1;
+        transform: rotateX(0); 
+    }
+}
+
+.btn{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Amatic SC', cursive;
+}
+
+
+#card-front {
+    color: #FFDFDF;
+  }
+  
+  #card, #card-front, #card-inside {
+    height: 420px;
+    top: 8%;
+    margin-right: 10;
+    max-width: 100%;
+    
+  }
+  
+  img {
+      height: 180px;
+      width: 180px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 200%;
+  }
+  
+  .wrap {
+      padding: 1.5em 2.5em;
+      height: 100%;
+  }
+  #card-front, #card-inside {
+    width: 50%;
+    -webkit-box-shadow: 2px 2px 30px rgba(0, 0, 0, .25), 0 0 1px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 2px 2px 30px rgba(0, 0, 0, .25), 0 0 1px rgba(0, 0, 0, .5);
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, .25), 0 0 1px rgba(0, 0, 0, .5);
+    position: absolute;
+    left: 50%;
+  }
+  
+  
+  #card-inside .wrap {
+      background: #FFEFEF;
+      -webkit-box-shadow: inset 2px 0 1px rgba(0, 0, 0, .05);
+      -moz-box-shadow: inset 2px 0 1px rgba(0, 0, 0, .05);
+      box-shadow: inset 2px 0 1px rgba(0, 0, 0, .05);
+  }
+
+  #card {
+      max-width: 960px;
+      margin: 0 auto;
+      transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
+      -webkit-transform-style: preserve-3d;
+      perspective: 5000px;
+      -moz-perspective: 5000px;
+      -webkit-perspective: 5000px;
+      position: relative;
+  }
+  
+  #card h1 {
+      text-align: center;
+      font-family: 'Sacramento', cursive;
+      font-size: 70px;
+      text-shadow: 
+          4px 4px 0px rgba(0, 0, 0, .15),
+          1px 1px 0 rgba(255, 200, 200, 255),
+          2px 2px 0 rgba(255, 150, 150, 255),
+          3px 3px 0 rgba(255, 125, 125, 255);
+      color: #FFF;
+  }
+
+  #card-front p {
+    font-size: large;
+  }
+
+
+  #card-inside h6 {
+      text-align: right;
+  }
+  #card-inside {
+      font-size: 1.0em;
+      line-height: 1.4;
+      font-family: 'Nobile';
+      color: #331717;
+      font-style: italic;
+  }
+  
+  p {
+      margin-top: 1em;
+  }
+  
+  p:first-child {
+      margin-top: 0;
+  }
+  
+  p.signed {
+      margin-top: 20px;
+      text-align: right;
+      font-family: 'Dancing Script', sans-serif;
+      font-size: 1.3em;
+  }
+  
+  #card-front {
+      background-color: #FF5555;
+      background-image: linear-gradient(top, #FF5555 0%, #FF7777 100%);
+      background-image: -moz-linear-gradient(top, #FF5555 0%, #FF7777 100%);
+      background-image: -webkit-linear-gradient(top, #FF5555 0%, #FF7777 100%);
+              transform-origin: left;
+         -moz-transform-origin: left;
+      -webkit-transform-origin: left;
+              transition:         transform 1s linear;
+         -moz-transition:    -moz-transform 1s linear;
+      -webkit-transition: -webkit-transform 1s linear;
+      position: relative;
+  }
+  
+  #card-front .wrap {
+              transition: background 1s linear;
+         -moz-transition: background 1s linear;
+      -webkit-transition: background 1s linear;
+  }
+  
+  #card-front button {
+    position: absolute;
+    bottom: 1em;
+    right: -12px;
+    background: #F44;
+    color: #FFF;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: .5em;
+    border: none;
+    cursor: pointer;
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, .25), 0 0 1px rgba(0, 0, 0, .4);
+       -moz-box-shadow: 2px 2px 3px rgba(0, 0, 0, .25), 0 0 1px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, .25), 0 0 1px rgba(0, 0, 0, .4);
+  }
+  
+  #card-front button:hover,
+  #card-front button:focus {
+    background: #F22;
+  }
+  
+  #close {
+    display: none;
+  }
+  
+  #card.open-fully #close,
+  #card-open-half #close {
+    display: inline;
+  }
+  
+  #card.open-fully #open {
+    display: none;
+  }
+  
+  
+  #card.open-half #card-front,
+  #card.close-half #card-front {
+              transform: rotateY(-90deg);
+         -moz-transform: rotateY(-90deg);
+      -webkit-transform: rotateY(-90deg);
+  }
+  #card.open-half #card-front .wrap {
+      background-color: rgba(0, 0, 0, .5);
+  }
+  
+  #card.open-fully #card-front,
+  #card.close-half #card-front {
+    background: #FFEFEF;
+  }
+  
+  #card.open-fully #card-front {
+      transform: rotateY(-180deg);
+      -moz-transform: rotateY(-180deg);
+      -webkit-transform: rotateY(-180deg);
+  }
+  
+  #card.open-fully #card-front .wrap {
+      background-color: rgba(0, 0, 0, 0);
+  }
+  
+  #card.open-fully #card-front .wrap *,
+  #card.close-half #card-front .wrap * {
+     display: none;
+  }
+  
